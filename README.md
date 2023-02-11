@@ -1,1 +1,1 @@
-# -proyecto_rna-seq
+# proyecto_rna-seq
