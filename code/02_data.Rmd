@@ -17,5 +17,18 @@ rse_gene
 
 # Guardar una copia original 
 rse_gene_org <- rse_gene
+```
+
+```{r revisar_datos,message=FALSE, warning=FALSE}
+
+# Obtener los numeros de lecturas
+assay(rse_gene, "counts") <- compute_read_counts(rse_gene)
+
+# Facilitar el uso de la informacion del experimento
+rse_gene <- expand_sra_attributes(rse_gene)
+
+# Explorar los parametros del experimento y algunas de sus variables
+colData(rse_gene)[,
+    grepl("^sra_attribute", colnames(colData(rse_gene)))]
 
 ```
