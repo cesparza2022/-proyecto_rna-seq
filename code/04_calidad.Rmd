@@ -1,0 +1,35 @@
+## Filtros 
+
+```{r qual_check1}
+## http://rna.recount.bio/docs/quality-check-fields.html
+# Analisis de calidad
+rse_gene$assigned_gene_prop <- rse_gene$recount_qc.gene_fc_count_all.assigned / rse_gene$recount_qc.gene_fc_count_all.total
+summary(rse_gene$assigned_gene_prop)
+```
+
+```{r qual_check2}
+assignedGeneProp <- data.frame(Categoria = rse_gene$assigned_gene_prop)
+fig1 <-ggplot(assigGeneProp, aes(x=Categoria)) + 
+  geom_histogram(color="black", fill= 'darkblue') +
+  xlab('Assigned gene prop')
+
+fig1
+```
+
+```{r attrbt_check}
+# Graficar los niveles de expresion en genotipo
+with(colData(rse_gene), plot(assigned_gene_prop, sra_attribute.genotype))
+abline(v=0.3585,col = "red")
+
+# Graficar los niveles de expresion en edad
+with(colData(rse_gene), plot(assigned_gene_prop, sra_attribute.age))
+abline(v=0.3585,col = "red")
+
+# Graficar los niveles de expresion en género 
+with(colData(rse_gene), plot(assigned_gene_prop, sra_attribute.gender))
+abline(v=0.3585,col = "red")
+
+# Graficar los niveles de expresion en fenotipo
+with(colData(rse_gene), plot(assigned_gene_prop, sra_attribute.phenotype))
+abline(v=0.3585,col = "red")
+```
