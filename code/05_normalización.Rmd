@@ -1,0 +1,19 @@
+## Normalización 
+
+```{r }
+# Construir un objeto con el cual se podran normalizar los datos
+dge <- DGEList(
+    counts = assay(rse_gene, "counts"),
+    genes = rowData(rse_gene))
+dge <- calcNormFactors(dge)
+```
+```{r}
+# Grafica la expresion diferencial entre fenotipos
+ggplot(as.data.frame(colData(rse_gene)), aes(y = assigned_gene_prop, x = sra_attribute.phenotype)) +
+    geom_boxplot() +
+    theme_bw(base_size = 20) +
+    ylab("Assigned Gene Prop") +
+    xlab("Phenotype")
+
+```
+
