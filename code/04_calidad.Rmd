@@ -33,3 +33,9 @@ abline(v=0.3585,col = "red")
 with(colData(rse_gene), plot(assigned_gene_prop, sra_attribute.phenotype))
 abline(v=0.3585,col = "red")
 ```
+
+```{r phenotype_check}
+# Revisar el atributo de fenotipo
+with(colData(rse_gene), tapply(assigned_gene_prop, sra_attribute.phenotype, summary))
+```
+
