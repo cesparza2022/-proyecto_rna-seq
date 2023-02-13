@@ -1,0 +1,22 @@
+## Formateo
+
+```{r analisis}
+# Revisar ls patrones
+head(rse_gene$sra.sample_attributes)
+```
+
+```{r arreglar_atributos}
+## Arreglar los atributos para que no generen problemas  
+
+# Cambiar el número de semanas por young y old 
+rse_gene$sra.sample_attributes <- gsub("8 weeks", "young", rse_gene$sra.sample_attributes)
+rse_gene$sra.sample_attributes <- gsub("8-12 weeks", "old", rse_gene$sra.sample_attributes)
+
+# Remplazar los espacios en blaco para que no hayan errores
+rse_gene$sra.sample_attributes <- gsub("Whole tissue", "whole-tissue", rse_gene$sra.sample_attributes)
+rse_gene$sra.sample_attributes <- gsub("Forebrain tissue", "forebrain_tissue  ", rse_gene$sra.sample_attributes)
+rse_gene$sra.sample_attributes <- gsub("Visual cortex", "visual_cortex", rse_gene$sra.sample_attributes)
+
+# Ver cómo queda
+rse_gene$sra.sample_attributes[1:12]
+```
