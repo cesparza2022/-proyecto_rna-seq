@@ -35,3 +35,9 @@ rse_gene$sra_attribute.age <- factor(rse_gene$sra_attribute.age)
 summary(as.data.frame(colData(rse_gene)[,
     grepl("^sra_attribute.[cellular_fraction|gender|genotype|source_name|strain|age]", colnames(colData(rse_gene)))]))
 ```
+
+
+```{r seguridad}
+# Hacemos un respaldo 
+rse_gene_secure <- rse_gene
+```
