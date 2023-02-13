@@ -20,3 +20,18 @@ rse_gene$sra.sample_attributes <- gsub("Visual cortex", "visual_cortex", rse_gen
 # Ver cómo queda
 rse_gene$sra.sample_attributes[1:12]
 ```
+
+
+```{r mod_data}
+# Pasar los atributos a factores para poder manipularlos
+rse_gene$sra_attribute.phenotype <- factor(rse_gene$sra_attribute.cellular_fraction)
+rse_gene$sra_attribute.gender <- factor(rse_gene$sra_attribute.gender)
+rse_gene$sra_attribute.genotype <- factor(rse_gene$sra_attribute.genotype)
+rse_gene$sra_attribute.source_name <- factor(rse_gene$sra_attribute.source_name)
+rse_gene$sra_attribute.strain <- factor(rse_gene$sra_attribute.strain)
+rse_gene$sra_attribute.age <- factor(rse_gene$sra_attribute.age)
+
+# Generar resumen de las variables de interes
+summary(as.data.frame(colData(rse_gene)[,
+    grepl("^sra_attribute.[cellular_fraction|gender|genotype|source_name|strain|age]", colnames(colData(rse_gene)))]))
+```
