@@ -41,6 +41,27 @@ limma::plotMA(eb_results, coef = 2)
 volcanoplot(eb_results, coef = 2, highlight = 10, names = de_results$gene_name)
 ```
 
+```{r}
+## Extraer valores de los genes de interés
+exprs_heatmap <- vGene$E[rank(de_results$adj.P.Val) <= 30, ]
+
+## Creemos una tabla con información de las muestras
+## y con nombres de columnas más amigables
+df <- as.data.frame(colData(rse_gene)[, 
+        c("genotype", "sra_attribute.phenotype","sra_attribute.age" )])
+colnames(df) <- c("Genotype", "Phenotype", "Age")
+
+## Hacer el p heatmap
+pheatmap(
+    exprs_heatmap,
+    cluster_rows = TRUE,
+    cluster_cols = TRUE,
+    show_rownames = FALSE,
+    show_colnames = FALSE,
+    annotation_col = df
+)
+
+```
 
 
 
