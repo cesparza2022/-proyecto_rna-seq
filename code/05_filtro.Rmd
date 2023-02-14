@@ -1,0 +1,27 @@
+## Filtros
+
+```{r filtro_1}
+# Eliminar las muestras de menor calidad
+rse_gene <- rse_gene[, rse_gene$assigned_gene_prop > 0.3585]
+hist(rse_gene$assigned_gene_prop)
+```
+
+```{r estd_gene}
+# Obtener estadísticas de la expresión de genes
+gene_means <- rowMeans(assay(rse_gene, "counts"))
+summary(gene_means)
+```
+
+```{r porcentaje}
+# Obtener el porcentaje de genes con el que nos quedamos
+rse_gene <- rse_gene[gene_means > 0.2, ]
+round(nrow(rse_gene) / nrow(rse_gene_unfiltered) * 100, 2)
+```
+
+```{r filtro_2}
+# Eliminamos con el otro cunantil 
+rse_gene<- rse_gene[gene_means > 0.1, ]
+
+# Dimensiones finales
+dim(rse_gene)
+```
