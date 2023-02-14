@@ -15,7 +15,7 @@ summary(gene_means)
 ```{r porcentaje}
 # Obtener el porcentaje de genes con el que nos quedamos
 rse_gene <- rse_gene[gene_means > 0.2, ]
-round(nrow(rse_gene) / nrow(rse_gene_unfiltered) * 100, 2)
+round(nrow(rse_gene) / nrow(rse_gene_secure) * 100, 2)
 ```
 
 ```{r filtro_2}
