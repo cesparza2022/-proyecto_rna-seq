@@ -41,3 +41,14 @@ summary(as.data.frame(colData(rse_gene)[,
 # Hacemos un respaldo 
 rse_gene_secure <- rse_gene
 ```
+
+```{r variable_cat}
+# Crear la nueva columna llamada genotype
+rse_gene$genotype <- ifelse(rse_gene$sra_attribute.genotype == "WT", "WT", "mutant")
+
+# Reemplazar los genotipos que no sean WT
+rse_gene$genotype[rse_gene$sra_attribute.genotype != "WT"] <- "mutant"
+# Encontrar diferencias
+table(rse_gene$genotype)
+
+```
