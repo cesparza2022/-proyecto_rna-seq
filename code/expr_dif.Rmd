@@ -1,0 +1,48 @@
+## Expresión diferencial 
+
+```{r}
+# Generar el modelo linear estadistico
+mod <- model.matrix(~ sra_attribute.phenotype + sra_attribute.age + genotype + assigned_gene_prop,
+    data = colData(rse_gene))
+# Observar las variables que componen el modelo
+colnames(mod)
+```
+
+```{R }
+vGene <- voom(dge, mod, plot = TRUE)
+```
+
+```{R}
+eb_results <- eBayes(lmFit(vGene))
+
+de_results <- topTable(
+    eb_results,
+    coef = 2,
+    number = nrow(rse_gene),
+    sort.by = "none"
+)
+dim(de_results)
+```
+
+```{R}
+head(de_results)
+```
+
+```{R}
+table(de_results$adj.P.Val < 0.05)
+```
+
+```{R}
+## Visualicemos los resultados estadísticos
+limma::plotMA(eb_results, coef = 2)
+```
+
+```{R}
+volcanoplot(eb_results, coef = 2, highlight = 10, names = de_results$gene_name)
+```
+
+
+
+
+
+
