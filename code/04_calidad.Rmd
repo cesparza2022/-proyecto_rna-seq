@@ -1,4 +1,4 @@
-## Filtros 
+## Revisar calidad
 
 ```{r qual_check1}
 ## http://rna.recount.bio/docs/quality-check-fields.html
