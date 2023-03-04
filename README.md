@@ -2,7 +2,7 @@
 ## "MeCP2 represses the rate of transcriptional initiation of highly methylated long genes (RNA-Seq I)"
 ### *César F. Esparza Alvaradoo*
 
-## Antecedentes
+## Introducción
 El síndrome de Rett es un trastorno genético raro que afecta principalmente a las niñas. Se estima que afecta a 1 de cada 10,000 a 15,000 niñas. El trastorno se produce por una mutación en el gen MECP2 que se encuentra en el cromosoma X. Esta mutación provoca una alteración en el desarrollo del cerebro y provoca una discapacidad intelectual grave y pérdida de habilidades motoras.
 
 Los síntomas del síndrome de Rett pueden variar desde leves hasta graves. Los síntomas iniciales suelen aparecer en el primer año de vida y pueden incluir retraso en el desarrollo motor, pérdida del interés en los juguetes y una disminución en la comunicación con los demás. A medida que la niña crece, puede desarrollar otros síntomas como convulsiones, problemas respiratorios, escoliosis y problemas gastrointestinales.
