@@ -12,3 +12,8 @@ La investigación actual sobre el síndrome de Rett se centra en entender la bas
 En estudios previos, se ha demostrado que la eliminación de la proteína MeCP2 provoca una alteración significativa en la expresión génica en el cerebro, lo que sugiere que la disfunción de MeCP2 puede contribuir a la patogénesis del síndrome de Rett. Por lo tanto, la identificación de genes diferencialmente expresados en ratones con síndrome de Rett puede proporcionar información valiosa sobre los procesos patológicos en la enfermedad.
 
 En la investigación propuesta, se analizarán las diferencias en la expresión génica en muestras de cerebro de ratones con síndrome de Rett y ratones normales. Se espera que esta investigación proporcione información importante sobre los mecanismos subyacentes del síndrome de Rett y posibles objetivos terapéuticos para la enfermedad.
+
+## Sobre los datos 
+La base de datos consiste de 132 muestras de las que se extrae información para 7 características. 
+![image](https://user-images.githubusercontent.com/100377746/222931652-cabe8473-8689-45ea-ae23-c22fd291cac2.png)
+*figura 1. información sobre las características en la base de datos*
