@@ -89,5 +89,19 @@ Se hace un gráfico MA para visualizar la magnitud y la dirección de los cambio
 *figura 11. *
 
 
+Con los datos anteriores y las variables analizadas, se puede obtener graficamente los genes con mayor expresión diferencial.
 
+![image](https://user-images.githubusercontent.com/100377746/223731940-1791f7a0-1357-4264-a36b-87f54ebb41ed.png)
+
+*figura 12. genes con mayor expresión diferencial*
+
+![image](https://user-images.githubusercontent.com/100377746/223732532-5c6726b5-99cb-4391-80ee-a544c716757e.png)
+
+*figura 13. información de los genes con mayor expresión diferencial*
+
+Se observa la expresión de los genes dependiendo de todas las condiciones que se analizaron en el modelo. La información solo se extrajo de los primeros 30 genes mas significativos. 
+
+![image](https://user-images.githubusercontent.com/100377746/223732838-efde1034-e6ef-4299-abb1-cb8b6b1194c5.png)
+
+*figura 14. heatmap con la información del modelo*
 
