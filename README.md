@@ -74,12 +74,19 @@ Se evaluan los atributos del set de datos despues de la limpieza
 
 *figura 9. ditribución de los datos por genotipo posterior a la limpieza*
 
+## Análisis
+
 Se genera el modelo estadistico de acuerdo al *fenotipo*, *edad* y *genotipo*. Se obtienen estimados de la desviación estandar.
 
 ![image](https://user-images.githubusercontent.com/100377746/223729090-b68dec74-2971-412d-a61f-ea549fc0ffd8.png)
 
 *figura 10. desviacion estandar y valor de expresión logarítmica de cada gen*
 
+Se hace un gráfico MA para visualizar la magnitud y la dirección de los cambios en la expresión génica. 
+
+![image](https://user-images.githubusercontent.com/100377746/223729499-2d015f3f-8d54-4317-9853-7075c8f78e45.png)
+
+*figura 11. *
 
 
 
