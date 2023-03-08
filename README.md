@@ -60,7 +60,7 @@ Se descartan las muestras que estan por debajo de un umbral de 0.3585, el cual r
 
 ## Resultados
 
-Se evaluan los atributos del set de datos despues de la limpieza 
+Se evaluan los atributos del set de datos despues de la limpieza. Para esto, se usaron boxplots de algunos de los diferentes atributos, como el *fenotipo*,*edad* y *genotipo*, para analizar la diferencia entre la expresión de las muestras bajo distintas condiciones. 
 
 ![image](https://user-images.githubusercontent.com/100377746/223723238-995962b9-9628-42eb-a67e-d475a4ebfbcb.png)
 
