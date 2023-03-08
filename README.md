@@ -58,12 +58,18 @@ Se descartan las muestras que estan por debajo de un umbral de 0.3585, el cual r
 
 
 
-
-
-
 ## Resultados
 
+Se evaluan los atributos del set de datos despues de la limpieza 
 
+![image](https://user-images.githubusercontent.com/100377746/223723238-995962b9-9628-42eb-a67e-d475a4ebfbcb.png)
 
+*figura 7. ditribución de los datos por fenotipo posterior a la limpieza*
 
+![image](https://user-images.githubusercontent.com/100377746/223723507-37ae5834-9ee7-403d-869d-80c2e68305e6.png)
 
+*figura 8. ditribución de los datos por género posterior a la limpieza*
+
+![image](https://user-images.githubusercontent.com/100377746/223723540-586e5c6a-f960-4e63-ab11-0ae3ac127069.png)
+
+*figura 9. ditribución de los datos por genotipo posterior a la limpieza*
